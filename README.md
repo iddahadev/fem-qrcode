@@ -7,20 +7,22 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - [Frontend Mentor - QR code component solution](#frontend-mentor---qr-code-component-solution)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
-    - [Screenshot](#screenshot)
+    - [Screenshots](#screenshots)
     - [Links](#links)
   - [Author](#author)
 
 ## Overview
 
-### Screenshot
+### Screenshots
 
-![](./screenshot.jpg)
+![](./screenshots/desktop-screenshot.png)
+
+![](./screenshots/mobile-screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/qr-code-component-using-css-flexbox-and-variables-cycqJEcAAA)
+- Live Site URL: [Github Page](https://iddahadev.github.io/frontend-mentor-qrcode/)
 
 ## Author
 
