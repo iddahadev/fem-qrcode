@@ -23,7 +23,6 @@ html {
 }
 
 body {
-  display: flex;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -33,6 +32,13 @@ body {
   font-family: var(--outfit);
   font-size: var(--font-size);
   color: var(--grey);
+}
+
+main {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
