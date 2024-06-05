@@ -2,7 +2,7 @@
   /* colors from style guide */
   --white: #ffffff;
   --dark-navy: #1f3251;
-  --grey: #7b879d;
+  --grey: hsl(220, 15%, 55%);
   --light-grey: #d6e2f0;
 
   /* font */
@@ -66,6 +66,8 @@ img {
   border-radius: 20px;
 
   text-align: center;
+
+  box-shadow: rgba(100, 100, 111, 0.15) 0px 20px 35px 0px;
 }
 
 .card img {
@@ -77,6 +79,7 @@ img {
 .card h1 {
   padding: 0 1rem;
   font-size: 1.375rem;
+  letter-spacing: 0.115px;
 }
 
 .card p {
