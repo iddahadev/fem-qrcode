@@ -1,13 +1,14 @@
 :root {
   /* colors from style guide */
-  --white: #ffffff;
-  --dark-navy: #1f3251;
-  --grey: hsl(220, 15%, 55%);
-  --light-grey: #d6e2f0;
+  --color-primary: #1f3251;
+  --color-white: #ffffff;
+  --color-grey: hsl(220, 15%, 55%);
+  --color-light-grey: #d6e2f0;
 
   /* font */
-  --outfit: Outfit, "sans-serif";
-  --font-size: 0.9375rem;
+  --font-family: Outfit, "sans-serif";
+  --font-size-15: 0.9375rem;
+  --font-size-22: 1.375rem;
 }
 
 /* override default styles */
@@ -21,32 +22,29 @@ html {
   box-sizing: inherit;
 }
 
+body,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   height: 100vh;
   margin: 0;
   padding: 0;
 
-  background-color: var(--light-grey);
+  background-color: var(--color-light-grey);
 
-  font-family: var(--outfit);
-  font-size: var(--font-size);
-  color: var(--grey);
+  font-family: var(--font-family);
+  font-size: var(--font-size-15);
+  color: var(--color-grey);
 }
 
 main {
   display: flex;
   height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-h1 {
-  margin: 0;
-  color: var(--dark-navy);
-}
-
-p {
-  margin: 0;
+  margin: 1rem;
 }
 
 img {
@@ -55,11 +53,14 @@ img {
 
 /* card style */
 .card {
+  width: 100%;
+  max-width: 20rem;
+
   display: flex;
   flex-direction: column;
 
-  background-color: var(--white);
-  width: 20rem;
+  background-color: var(--color-white);
+
   padding: 1rem;
   margin: auto;
 
@@ -67,21 +68,25 @@ img {
 
   text-align: center;
 
-  box-shadow: rgba(100, 100, 111, 0.15) 0px 20px 35px 0px;
+  box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
 }
 
-.card img {
+.card .card__image {
   order: -1;
+
+  height: 18rem;
   border-radius: 10px;
   margin-bottom: 1.5rem;
 }
 
-.card h1 {
-  padding: 0 1rem;
-  font-size: 1.375rem;
+.card .card__title {
+  font-size: var(--font-size-22);
+  color: var(--color-primary);
 }
 
-.card p {
-  margin: 1rem 0 1.5rem 0;
-  padding: 0 1rem;
+.card .card__description {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 0 16px;
+  letter-spacing: 0.188px;
 }
