@@ -44,7 +44,7 @@ body {
 main {
   display: flex;
   height: 100%;
-  margin: 1rem;
+  padding: 16px;
 }
 
 img {
